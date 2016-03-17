@@ -36,15 +36,15 @@ module Grape
   end
 end
 
-class << Grape::Formatter::Base
+class << Grape::Formatter
   FORMATTERS[:msgpack] = Grape::Msgpack::Formatter
 end
 
-class << Grape::ErrorFormatter::Base
+class << Grape::ErrorFormatter
   FORMATTERS[:msgpack] = Grape::Msgpack::ErrorFormatter
 end
 
-class << Grape::Parser::Base
+class << Grape::Parser
   PARSERS[:msgpack] = Grape::Msgpack::Parser
 end
 
